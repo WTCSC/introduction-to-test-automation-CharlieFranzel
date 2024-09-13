@@ -28,26 +28,22 @@ this file.
 """
 
 def test_is_even():
-  """
-  Tests for the `is_even` function
-  """
+  assert math_it_up.is_even(3) == False
+  assert math_it_up.is_even(20)
+  assert math_it_up.is_even(0)
 
 def test_is_odd():
-  """
-  Tests for the `is_odd` function
-  """
+  assert math_it_up.is_odd(3)
+  assert math_it_up.is_odd(20) == False
+  assert math_it_up.is_odd(0) == False
 
 def test_mean():
-  """
-  Tests for the `mean` function
-  """
+  assert math_it_up.mean([2,3,5,2]) == 3
+  assert math_it_up.mean([89, 31, 48, 11, 9, 68, 95, 3, 2, 41]) == 39.7
 
 def test_median():
-  """
-  Tests for the `median` function
-  """
-
+  assert math_it_up.median([12, 1, 172, 14, 86, 12.2]) == 13.1
+  assert math_it_up.median([2, 3, 5, 6, 8, 1, 3]) == 3
 def test_mode():
-  """
-  Tests for the `mode` function
-  """
+  assert math_it_up.mode([1, 1, 1, 0, 2, 3, 3]) == [1]
+  assert math_it_up.mode([2, 2, 3, 3, 4, 5]) == [2, 3]
